@@ -85,6 +85,7 @@
 }
 
 - (void)setupButton:(UIButton *)itemButton title:(NSString *)title idx:(NSInteger)idx {
+    itemButton.titleLabel.numberOfLines = 0;
     itemButton.titleLabel.font = self.configration.selectedItemFont;
     [itemButton setTitleColor:self.configration.normalItemColor forState:UIControlStateNormal];
     [itemButton setTitle:title forState:UIControlStateNormal];
